@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr-CA"> 												<!-- Set page Language to french canadian --> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Linuks">
+		<meta name="robots" content="index, follow">
+		<meta name="DC.Language" content="fr">
+		<meta name="geo.placename" content="Joliette, québec">
+		<meta name="geo.region" content="ca-qc">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="Linuks">
+		<meta property="og:url" content="http://www.youplay.duckdns.org">
+		<meta property="og:site_name" content="Linuks">
+		<meta property="og:description" content="Linuks">
+		<meta name="title" content="Linuks">
+		<title>Super School Brothers</title>
+		<link rel="icon" href="./favicon.ico">
+		<script src="TemplateData/UnityProgress.js"></script>
+	</head>
+	<body>
+		<div class='topnav' id='topnav'> 							<!-- navigation bar at the top -->
+			<a href="../index.html" class="head-class active" title='Home'>Home</a> 
+			<a href="supportus.html" class="head-class" title='Donate'>Nous supporter!</a> 
+			<a href="contactus.html" title='Talk' target="_blank" class="head-class">Nous Contacter!</a>
+			<a href="download.html" class="head-class" title='Downloads'>Téléchargements</a>
+		</div>
+		<nav>
+			<ul id="navul">										<!-- The Left Sidebar --> <!-- navigation bar to the left -->
+				<li class="navli"><a href="ssb.html"><b>Super School Brothers</b></a></li>
+				<li class="navli"><a href="../flappyfish/flappyfish.html"><b>FlappyFish</b></a></li>
+			</ul>
+		</nav>
+		<div class="UnityPlayer">
+		  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+		  <div class="logo"></div>
+		  <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+		</div>
+    <script type='text/javascript'>
+	  var Module = {
+		TOTAL_MEMORY: 268435456,
+		errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+		compatibilitycheck: null,
+		dataUrl: "Release/webgl 1.2.data",
+		codeUrl: "Release/webgl 1.2.js",
+		memUrl: "Release/webgl 1.2.mem",
+		
+	  };
+	</script>
+	<script src="Release/UnityLoader.js"></script>
+	</body>
+</html>

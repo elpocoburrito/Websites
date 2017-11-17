@@ -1,0 +1,592 @@
+				/* BODY START */
+				
+				body {
+				    background-image: url("../images/wallpaper.jpg");
+				    /* set page background */
+				    
+				    background-size: 100%;
+				    /* set background size to 100% */
+				    
+				    background-repeat: repeat-y;
+				    /* repeat background on y axis */
+				}
+				/*  BODY END */
+				/* TABLE START */
+				
+				#tablesale {
+				    /*	the product selling table */
+				    
+				    position: absolute;
+				    /* set table position */
+				    
+				    left: 20%;
+				    /* set table position 20% from left */
+				    
+				    top: 15%;
+				    /* set table 15% from top */
+				    
+				    color: #333;
+				    /* set text color in table */
+				    
+				    font-family: Helvetica, Arial, sans-serif;
+				    /* nicer font */
+				    
+				    width: 640px;
+				    /* set table width to 640 px */
+				    
+				    border-collapse: collapse;
+				    /* fix clipping bug */
+				    
+				    border-spacing: 0;
+				    /*  no spacing for border*/
+				}
+				#tabletitle {
+				    position: absolute;
+				    /* table's title position type */
+				    
+				    left: 38%;
+				    /* set title 38% from left */
+				    
+				    top: 8%;
+				    /* set title 8% from top*/
+				}
+				.td-tablesale,
+				/* product selling table (cells) */
+				
+				.th-tablesale {
+				    border: 3px solid;
+				    /* add border around tds and ths */
+				    
+				    height: 30px;
+				    /* force the cells height */
+				    
+				    transition: all 0.3s;
+				    /* make a progressive animation of 0.3 sec */
+				}
+				.th-tablesale {
+				    background: #DFDFDF;
+				    /* Darken the header */
+				    
+				    font-weight: bold;
+				    /*make th 's font bold */
+				}
+				.td-tablesale {
+				    background: #FAFAFA;
+				    /* td's background get #fafafa html color */
+				    
+				    text-align: center;
+				    /* align cell's text center */
+				    
+				    background-color: rgba(100, 100, 100, 0.5);
+				    /*cells background become transparent */
+				}
+				/* Cells in even rows (2,4,6...) are one color */
+				
+				.tr-tablesale:nth-child(even) .td-tablesale {
+				    /* product selling table rows */
+				    
+				    background-color: rgba(100, 100, 100, 0.3)
+				}
+				/* Cells in odd rows (1,3,5...) are another  */
+				
+				.tr-tablesale:nth-child(odd) .td-tablesale {
+				    background-color: rgba(100, 100, 100, 0.3)
+				}
+				.tr-tablesale .td-tablesale:hover {
+				    background: #666;
+				    color: #FFF;
+				    /* Hover cell effect! */
+				}
+				.td-tablesale2,
+				/*right navigation box (bar) */
+				
+				.th-tablesale2 {
+				    border: 3px solid;
+				    /* add 3pixels border */
+				    
+				    height: 30px;
+				    /* th's height become 30px */
+				    
+				    transition: all 0.3s;
+				    /* Simple transition during hover */
+				}
+				.th-tablesale2 {
+				    background: #DFDFDF;
+				    /* Darken header a bit */
+				    
+				    font-weight: bold;
+				    /* make text bold */
+				}
+				.td-tablesale2 {
+				    background: #FAFAFA;
+				    /* make td's background #fafafa color*/
+				    
+				    text-align: center;
+				    /*align td's text center*/
+				    
+				    background-color: rgba(100, 100, 100, 0.5);
+				    /*set background color transparency */
+				}
+				/* Cells in even rows (2,4,6...) are one color */
+				
+				.tr-tablesale2:nth-child(even) .td-tablesale2 {
+				    background-color: rgba(100, 100, 100, 0.3)
+				    /* set background transparency*/
+				}
+				/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */
+				
+				.tr-tablesale2:nth-child(odd) .td-tablesale2 {
+				    background-color: rgba(100, 100, 100, 0.3)
+				    /* set background transparency */
+				}
+				.tr-tablesale2 .td-tablesale2:hover {
+				    background: #666;
+				    /* set background to #666  on hover*/
+				    
+				    color: #FFF;
+				    /*set hover color*/
+				}
+				#downloadtable {} #downloadtablediv {
+				    position: absolute;
+				    /*set position type to absolute */
+				    
+				    top: 15%;
+				    /* set position to 15% from top */
+				    
+				    left: 42%;
+				    /* set position to 42 % from left */
+				}
+				/* TABLE END */
+				/* Text Start */
+				
+				.prenavleft {
+				    font-family: Helvetica, Arial, sans-serif;
+				    /* Nicer font */
+				    
+				    font-size: 150%;
+				    /* bigger font */
+				}
+				.h1navleft {
+				    font-family: Helvetica, Arial, sans-serif;
+				    /* Nicer font */
+				    
+				    font-size: 150%;
+				}
+				.navlefttr {
+				    background: red;
+				    /* navlefttr to red background*/
+				    
+				    width: 300px;
+				    /* make width to 300 px */
+				}
+				.prebuy {
+				    /* buy page text */
+				    
+				    top: auto;
+				    /* auto adjust top position (y axis) */
+				    
+				    width: 20%;
+				    /* 20% of page width */
+				    
+				    font-size: 19px;
+				    /* set font size to 19px */
+				    
+				    font-family: Helvetica, Arial, sans-serif;
+				    /* nicer font */
+				    
+				    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15);
+				    /* text shadow */
+				}
+				/* TEXT END */
+				/* active */
+				
+				.navli {
+				    border-bottom: 1px solid #555;
+				    /* set bottom border to 1px wise solid #555 color */
+				}
+				.navli a {
+				    display: block;
+				    /* fix clipping issues */
+				    					color: #fff;
+				   /* color: #000;*/
+				    /* set color of link in navli */
+				    
+				    padding: 8px 0 8px 16px;
+				    /* set padding */
+				    
+				    text-decoration: none;
+				    text-align: center
+				    /* align text center */
+				}
+				.navli a.active {
+				    background-color: #4CAF50;
+				    /* set active page background color in navli */
+				    
+				    color: white;
+				    /* set active page text color */
+				}
+				.navli a:hover:not(.active) {
+				    background-color: #555;
+				    /* set not active page link background color in navli to #555*/
+				    
+				    color: white;
+				    /* set not active page link text color in navli */
+				}
+				/* END ACTIVE */
+				/* NAGIGATION BARS START */
+				
+				.topnav {
+				    /* navigation bar at the top of each pages */
+				    
+				    z-index: 1;
+				    font-size: 17px;
+				    /* set font size */
+				    
+					
+					background-color: rgba(47, 47, 47, 0.7);
+				    /*background-image: url("../images/topnavbackground.png");*/
+				    /* set background image */
+				    
+				    color: #f1f1f1;
+				    /*set color*/
+				    
+				    width: 100%;
+				    /* set top navi bar width to full page width */
+				    
+				    padding: 0;
+				    /* set invisible padding */
+				    
+				    letter-spacing: 1px;
+				    /* set space between letters */
+				    
+				    overflow: auto;
+				    /* fix clipping issue */
+				    
+				    float: left;
+				    /* make top nav float to left */
+				    
+				    overflow: hidden;
+				    height: 44px
+				    /* set topnav to 44 pixels height */
+				}
+				.topnav a {
+				    text-decoration: none;
+				    padding: 13px 15px 12px 15px !important;
+				    /* set a padding, fixing a display bug */
+				    
+				    border-bottom: none;
+				    display: inline-block;
+				    color: #000000;
+				    font-weight: bold;
+				    /*set font to bold */
+				}
+				.topnav a:hover {
+				    border-bottom: none;
+				    /* disable bottom border */
+				    
+				    background-color: #008CCE;
+				    /* change background color on mouse hover */
+				    
+				    color: #ffffff;
+				    /* set color on hover */
+				}
+				.topnav a.active {
+				    background-color: #73AD21;
+				    /* change active page background color if class = active */
+				    
+				    color: #ffffff;
+				    /* change text color if active page link */
+				}
+				.sidenav {
+				    position: absolute;
+				    /* set element position to previous realtive element (absolute) */
+				    
+				    font-size: 18px;
+				    /* change text size */
+				    
+				    background-image: url("../images/sidenavbackground.png");
+				    /* set side nav background image */
+				    
+				    color: #f1f1f1;
+				    /* change side nav text color */
+				    
+				    width: 210px;
+				    /* change sidenav width */
+				    
+				    height: 1800px;
+				    /* change sidenav height */
+				    
+				    padding: 0;
+				    /* set sidenav to no padding */
+				    
+				    letter-spacing: 1px;
+				    /* 1pixel space between letters */
+				    
+				    top: 65px;
+				    /* set sidenav 65 px from top */
+				}
+				.sidenav a {
+				    /* left side navigation bar */
+				    
+				    text-decoration: none;
+				    padding: 10px 45px 9px 45px !important;
+				    /* set padding to fix clipping isssue */
+				    
+				    border-bottom: none;
+				    /*set to no bottom border*/
+				    
+				    display: inline-block;
+				    color: #006B00;
+				    /* change sidenav links text color*/
+				    
+				    font-weight: bold;
+				    /*set sidenav links text bold*/
+				}
+				.sidenav a:hover {
+				    border-bottom: none;
+				    /*set to have no bottom border */
+				    
+				    background-color: #008CCE;
+				    /* change background color while hovering */
+				    
+				    color: #ffffff;
+				    /* change text color during hover */
+				}
+				.sidenav a.active {
+				    background-color: #73AD21;
+				    /*/change sidenav background color while hovering */
+				    
+				    color: #ffffff;
+				    /*change active page link text color */
+				}
+				#navul {
+					
+					/* left side navigation bar */
+				    position: relative;
+				    /* set navul position to relative */
+				    
+				    list-style-type: none;
+				    /* remove lists dots*/
+				    
+				    margin: 0;
+				    /* set navul to no margin */
+				    
+				    padding: 0;
+				    /* set navul to no padding */
+				    
+					background-color: rgba(47, 47, 47, 0.7);
+					
+				    /*background-color: #007BCE;*/
+				    /* change navul backgroud color */
+				    
+				    width: 180px;
+				    /* set navul width to 190px */
+				    
+				    height: 800px;
+				    /* set navul to 800px height */
+				    
+				    font-family: Helvetica, Arial, sans-serif;
+				    /* Nicer font */
+				    
+				    border: 1px solid #555;
+				    /* give nav ul to 1px border of #555 color */
+				    
+				    overflow: auto;
+				    /* fix overlapping issues */
+				}
+				#divlefttable {
+				    /* right table acting as a product page description */
+				    
+				    position: fixed;
+				    /* set poisition to fixed*/
+				    
+				    top: 5%;
+				    /* set divlefttable position 5% from top*/
+				    
+				    right: 0;
+				    /* set divlefttable position at right */
+				    
+				    text-align: center;
+				    /* */
+				    
+				    width: auto;
+				    /* set divlefttable to automaticly matche content width*/
+				    
+				    height: auto;
+				    /* set height to adjust to content */
+				    
+				    margin: 0;
+				    /*  set margin to none */
+				    
+				    padding: 0;
+				    /*  set padding to none */
+				    
+				    background-color: #007BCE;
+				    /* set background color from html color code */
+				    
+				    font-family: Helvetica, Arial, sans-serif;
+				    /* nicer font */
+				    
+				    font-size: 150%;
+				    /* bigger font */
+				    
+				    border: 1px solid #555;
+				    /* set 1pixel solid border in #555 color */
+				    
+				    overflow: auto;
+				    /* fix overlapping issues */
+				}
+				/*  NAVIGATION END */
+				
+				#contactus {
+				    /* text and link content at center of contact us page */
+				    
+				    position: absolute;
+				    /* set positionning type to absolute */
+				    
+				    top: 20%;
+				    /* set contactus element 20% from top */
+				    
+				    left: 40%;
+				    /* set contactus 40% from left */
+				    
+				    border: 2px;
+				    /* set contact us border to 2px */
+				    
+				    font-family: Helvetica, Arial, sans-serif;
+				    /* nicer fonts */
+				    
+				    font-size: 130%;
+				    /* bigger fonts */
+				}
+				#paypalbutton {
+				    /*bouton acheter avec paypal */
+				    
+				    position: relative;
+				    /* set positionning type to relative */
+				    
+				    left: -10%;
+				    /* set positionning to -10% from left */
+				}
+				#paypalbuttonimg {
+				    /* bouton acheter avec paypal */
+				    
+				    width: 50%;
+				    /* reduce paypal button 1/2 */
+				    
+				    height: 50%;
+				    /* reduce paypal button 1/2 */
+				}
+				#centerbuy {
+				    /* texte et lien de la page support us ( contenu du centre ) */
+				    
+				    position: absolute;
+				    /* set position type to absolute */
+				    
+				    margin-left: auto;
+				    /* automaticly set margin */
+				    
+				    margin-right: auto;
+				    /* automaticly set margin */
+				    
+				    top: 20%;
+				    /* position buy button 20% from top */
+				    
+				    left: 40%;
+				    /* position buy button 40% from left */
+				    
+				    width: 30%;
+				    /* set button to 30% of page size */
+				}
+				#form {
+				    /* the form in the buy.html page */
+				    
+				    position: absolute;
+				    /* set position type to absolute */
+				    
+				    top: 24%;
+				    /* set form at 24% from top */
+				    
+				    left: 40%;
+				    /* set form 40% from left */
+				}
+				#video1 {
+				    /* video de la page index.html */
+				    
+				    position: absolute;
+				    /* set position type to absolute */
+				    
+				    top: 15%;
+				    /*place video 15% from top */
+				    
+				    left: 40%;
+				    /* set video 40% from left */
+				}
+				
+			
+
+
+
+			
+				
+.tg		{
+padding: 10px 0 10px 20px;
+border-collapse:collapse;
+border-spacing:0;
+border: 1.5px solid #555;
+background-color: rgba(47, 47, 47, 0.7);
+color: #fff;
+position:
+
+		}
+		
+.tg td	{
+font-family:Arial, sans-serif;
+font-size:14px;
+padding:10px 5px;
+border-style:solid;
+border-width:0px;
+overflow:hidden;
+word-break:normal;
+		}
+		
+.tg th	{
+font-family:Arial, sans-serif;
+font-size:14px;
+font-weight:normal;
+padding:10px 5px;
+border-style:solid;
+border-width:0px;
+overflow:hidden;
+word-break:normal;
+		}
+		
+.tg homecontent{
+background-color:#343434;
+text-align:center;
+vertical-align:top;
+		}
+		
+#testbox			{
+				background-color: #fff;
+	`				}
+	
+	
+	
+	
+	
+	nav		{
+    float: left;
+    width: 200px;
+    border: 3px solid #73AD21;
+	width: 180px;
+				    /* set navul width to 190px */
+				    
+	height: 800px;
+				    /* set navul to 800px height */
+			}
+			
+section {
+    margin-left: 206px;
+    border: 3px solid red;
+}

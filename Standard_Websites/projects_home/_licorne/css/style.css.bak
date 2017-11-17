@@ -1,0 +1,63 @@
+body {
+    background-image: url("../images/wallpaper.jpg");
+	 background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+#ul1	{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 150px;
+		background-color: #72c0de;
+		border: 1px solid #555;
+		height: 90%;
+		position: fixed;
+		overflow: auto;
+		top: 60px ;
+		opacity: 0.8;
+		}
+	
+	
+#logo		{
+			
+			left: 15%;
+			top: 3%;
+			}
+	
+	
+	
+#Paragraph	{
+			position: absolute;
+			left: 300px;
+			top: 30%;
+			}
+			
+#ul2	{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 149px;
+			background-color: #72c0de;
+			border: 1px solid #555;
+			height: 300px;
+			position: fixed;
+			overflow: auto;
+			top: 60px ;
+			opacity: 0.8;
+			}
+			
+#ul3	{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 149px;
+			background-color: #72c0de;
+			border: 1px solid #555;
+			height: 20%;
+			position: fixed;
+			overflow: auto;
+			top: 400px ;
+			opacity: 0.8;
+			}

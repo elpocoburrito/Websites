@@ -1,0 +1,282 @@
+body 				{
+				background-image: url("../images/wallpaper.jpg");
+				background-size: 100%;
+					background-repeat: repeat-y;
+					}
+				
+					
+					
+
+.topnav 				{
+				position:static;
+				z-index:1;
+				font-size: 17px;
+				background-image: url("../images/topnavbackground.png");
+				color:#f1f1f1;
+				width:100%;
+				padding:0;
+				letter-spacing:1px;
+					}
+					
+.topnav a			{
+				text-decoration:none;
+				padding:13px 15px 12px 15px !important; 
+				border-bottom:none;
+				display:inline-block;
+				color: #000000;
+				font-weight: bold;
+					}
+					
+.topnav a:hover		{
+				border-bottom:none;
+				background-color:#008CCE;
+				color:#ffffff;
+					}
+					
+.topnav a.active 	{
+				background-color:#73AD21;
+				color:#ffffff;
+					}
+
+
+.sidenav			{
+				position: absolute;
+				font-size: 18px;
+				background-image: url("../images/sidenavbackground.png");
+				color:#f1f1f1;
+				width: 210px;
+				height: 1800px;
+				padding: 0;
+				letter-spacing:1px;
+				top:65px;
+					}
+					
+
+					
+.sidenav a			{
+				text-decoration:none;
+				padding:10px 45px 9px 45px !important;
+				border-bottom:none;
+				display:inline-block;
+				color: #006B00;
+				font-weight: bold;
+					}
+					
+.sidenav a:hover		{
+				border-bottom:none;
+				background-color:#008CCE;
+				color:#ffffff;
+					}
+					
+.sidenav a.active 	{
+				background-color:#73AD21;
+				color:#ffffff;
+					}	
+					
+				
+#tablesale			{
+				position: absolute;
+				left:20%;
+				top: 15%;
+				color: #333;
+				font-family: Helvetica, Arial, sans-serif;
+				width: 640px; 
+				border-collapse: collapse; 
+				border-spacing: 0; 
+					
+					
+					}
+					
+#tabletitle			{
+				position: absolute;
+				left:38%;
+				top: 8%;
+				
+	`				}
+	
+	
+	
+
+.td-tablesale, .th-tablesale { 
+border: 3px solid; /* No more visible border */
+height: 30px; 
+transition: all 0.3s;  /* Simple transition for hover effect */
+}
+
+.th-tablesale {
+background: #DFDFDF;  /* Darken header a bit */
+font-weight: bold;
+}
+
+.td-tablesale		{
+		background: #FAFAFA;
+		text-align: center;
+        background-color: rgba(100, 100, 100, 0.5);
+					}
+
+/* Cells in even rows (2,4,6...) are one color */ 
+.tr-tablesale:nth-child(even) .td-tablesale {  background-color: rgba(100, 100, 100, 0.3) }   
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */ 
+.tr-tablesale:nth-child(odd) .td-tablesale {  background-color: rgba(100, 100, 100, 0.3) }  
+
+.tr-tablesale .td-tablesale:hover { background: #666; color: #FFF; } /* Hover cell effect! */
+
+
+
+
+
+
+
+#navul			{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background-color: #007BCE;
+			width: 180px;
+			height: 800px;
+			font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+			border: 1px solid #555;
+				}
+				
+.navli			{
+			border-bottom: 1px solid #555;
+				}
+				
+				
+				
+.navli a			{
+			display: block;
+			color: #000;
+			padding: 8px 0 8px 16px;
+			text-decoration: none;
+			text-align:center
+				}
+				
+.navli a.active	{
+			background-color: #4CAF50;
+			color: white;
+	`			}		
+				
+				
+.navli a:hover:not(.active)	{
+			background-color: #555;
+			color: white;
+							}
+							
+							
+.activetop 					{
+			background-color: #4CAF50;
+			color: white;
+							}
+							
+							
+							
+
+
+
+.awesome:hover
+{
+background-color:#111;
+color:#fff;
+}							
+		
+		
+.awesome:active
+{
+top:1px;
+}						
+							
+							
+.awesome,.awesome:visited
+{
+font-size:13px;
+font-weight:bold;
+line-height:1;
+text-shadow:0 -1px 1px rgba(0,0,0,0.25);
+}						
+							
+							
+.large.awesome,.large.awesome:visited
+{
+font-size:14px;
+padding:8px 14px 9px;
+}
+
+
+.blue.awesome,.blue.awesome:visited
+{
+background-color:#2daebf;
+}
+
+.blue.awesome:hover
+{
+background-color:#007d9a;
+}
+
+
+.awesome,.awesome:visited
+{
+background:#222 url(alert-overlay.png) repeat-x;
+display:inline-block;
+padding:5px 10px 6px;
+color:#fff;
+text-decoration:none;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+-moz-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+text-shadow:0 -1px 1px rgba(0,0,0,0.25);
+border-bottom:1px solid rgba(0,0,0,0.25);
+position:relative;
+cursor:pointer;
+}
+
+
+
+.awesome:hover
+{
+
+background-color:#111;
+color:#fff;
+
+}
+
+
+
+
+
+
+
+/* paypal button */
+
+#paypalbutton	{
+position: relative;
+left: -10%;
+				}
+				
+				
+#paypalbuttonimg	{
+	width: 50%;
+	height: 50%;
+				}
+
+				
+.prebuy			{
+
+			top: auto;
+			width: 20%;
+			font-size:19px;
+			font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+			text-shadow:0 -1px 1px rgba(0,0,0,0.15);
+}
+
+
+#centerbuy		{
+	position: absolute;
+	margin-left:auto;
+	margin-right:auto;
+	top: 20%;
+	left: 40%;
+	width: 30%;
+}

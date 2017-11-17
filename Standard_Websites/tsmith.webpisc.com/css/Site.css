@@ -1,0 +1,333 @@
+ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 150px;
+	background-image: url("../Images/fondecran3.jpg");          /* Menu*/
+	border: 1px solid #555;
+	height: 100%;
+	position: fixed;
+	overflow: auto;
+}
+li a
+{
+	display: block;
+	color: #000;
+	padding: 8px 16px 8px 16px;									/* Les colones pour menu*/
+	text-decoration:none;
+}
+.active
+{
+	background-color: black;									/* Le menu texte background*/
+	color: white;
+}
+li
+{
+
+	text-align: center;											/* Emplacement texte menu*/
+	border-bottom: 1px solid #555
+}
+#accueil
+{
+	margin-left:150px;
+	padding:1px 16px;
+	height:1000px;	
+	background-image: url("../Images/fondecran11.jpg");			/* Tous ce qui concerne la page accueil*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 1920px 1080px;
+	background-color: #492FDF;
+}
+#emplacement
+{
+		position:absolute;
+		top: 400px;
+		left: 400px;	
+}
+#emplacement2
+{
+		position:absolute;
+		top: 500px;											/* Les 3 emplacements pour écriture page accueil*/
+		left: 200px;
+}
+#emplacement3
+{
+		position:absolute;
+		top: 700px;
+		left: 400px;
+}
+#Bonbon1	
+{
+	position:absolute;
+		left: 200px;
+		bottom: 850px;
+}
+
+#Bonbon2	
+{
+	position:absolute;
+		left: 200px;
+		bottom: 637px;
+}
+#Bonbon3	
+{
+	position:absolute;
+		left: 200px;
+		bottom: 425px;
+}
+#Bonbon4	
+{
+	position:absolute;
+		left: 200px;
+		bottom: 212px;
+}
+#Bonbon5	
+{
+	position:absolute;
+		left: 200px;									/* Images Bonbons*/
+		bottom: 10px;
+}
+#Bonbon6	
+{
+	position:absolute;
+		left: 1100px;
+		bottom: 850px;
+}
+#Bonbon7	
+{
+	position:absolute;
+		left: 1100px;
+		bottom: 637px;
+}
+#Bonbon8	
+{
+	position:absolute;
+		left: 1100px;
+		bottom: 425px;
+}
+#Bonbon9	
+{
+	position:absolute;
+		left: 1100px;
+		bottom: 212px;
+}
+#Bonbon10	
+{
+	position:absolute;
+		left: 1100px;
+		bottom: 10px;
+}
+#notremagasin
+{
+	margin-left:150px;
+	padding:1px 16px;
+	height:1000px;												/* tous ce qui concerne le menu magasin*/
+	background-image: url("../Images/fondecran.jpeg");
+	background-repeat: no-repeat;
+}
+#contact
+{
+	margin-left:150px;
+	padding:1px 16px;											/* tous ce qui concerne le menu contactez-nous*/
+	height:1000px
+}
+#tableau
+{
+	position:absolute;
+		left: 800px;											/* tous ce qui concerne l'inscription dans contactez-nous*/
+		bottom: 500px;
+}
+#Message
+{
+	width: 50px;												/* tous ce qui concerne la grandeur de l'espace message*/
+}
+#emplacement4
+{
+		position:absolute;
+		top: 850px;												/* emplacement de contactez-nous en bas de la page*/
+		left: 1750px;
+}
+#heure
+{
+	margin-left:150px;
+	padding:1px 16px;											/* tous ce qui concerne le menu heure d'ouverture*/
+	height:1000px
+}
+#emplacement5
+{
+	position:absolute;
+	top: 800px;
+	left: 500px;
+}
+#emplacement9
+{
+	position:absolute;
+	top: 300px;
+	left: 650px;
+}
+#emplacement10
+{
+	position:absolute;
+	top: 400px;
+	left: 725px;
+}
+#emplacement11
+{
+	position:absolute;
+	top: 400px;												/* emplacement texte*/
+	left: 950px;
+}
+#emplacement12
+{
+	position:absolute;
+	top: 400px;
+	left: 875px;
+}
+#emplacement13
+{
+	position:absolute;
+	top: 600px;
+	left: 850px;
+}
+#inscrire
+{
+	margin-left:150px;
+	padding:1px 16px;								/* menu inscrire */
+	height:1000px
+}
+#emplacementformulaire
+{
+	position:absolute;
+	top: 400px;
+	left: 700px;									/* emplacement du formulaire */
+}
+form div {
+margin-top: 15px;
+}
+#emplacement6
+{
+	position:absolute;
+	top: 40px;
+	left: 800px;
+}
+#emplacement7
+{
+	position:absolute;
+	top: 700px;										/*	emplacement ecriture */
+	left: 700px;
+}
+#emplacement8
+{
+	position:absolute;
+	top: 675px;
+	left: 1210px;
+}
+#qui
+{
+	margin-left:150px;
+	padding:1px 16px;								/*	tous ce qui concerne le menu qui somme-nous */
+	height:1000px
+}
+#video
+{
+	margin-left:150px;
+	padding:1px 16px;								/*	tous ce qui concerne le menu video*/
+	height:1000px
+}
+#video1
+{
+	position:absolute;
+	top: 375px;
+	left: 500px;
+}
+#Historique
+{
+	color: #DF0101;									/*	tous ce qui concerne le titre dans le menu qui somme-nous */
+	font-style: italic;
+}
+#collaboration
+{
+	margin-left:150px;
+	padding:1px 16px;								/*	tous ce qui concerne le menu collaboration*/
+	height:1000px
+}
+#homme1
+{
+	position:absolute;
+	top: 125px;
+	left: 300px;
+}
+#homme2
+{
+	position:absolute;
+	top: 10px;										/*	emplacement photo des hommes dans le menu collaboration */
+	left: 600px;
+}
+#homme3
+{
+	position:absolute;
+	top: 10px;
+	left: 500px;
+}
+#commanditaire1
+{
+	position:absolute;
+	top: 600px;
+	left: 100px;
+}
+#commanditaire2
+{
+	position:absolute;
+	top: 600px;										/*	emplacement photo des commanditaires dans le menu collaboration */
+	left:-550px;
+}
+#commanditaire3
+{
+	position:absolute;
+	top: 600px;
+	left: -1000px;
+}
+#emplacement14
+{
+	position:absolute;
+	top: 400px;
+	left: 425px;
+}
+#emplacement15
+{
+	position:absolute;
+	top: 400px;										/*	emplacement ecriture */
+	left: 1575px;
+}
+#emplacement16
+{
+	position:absolute;
+	top: 400px;
+	left: 925px;
+}
+#rabais
+{
+	margin-left:150px;
+	padding:1px 16px;								/*	tous ce qui concerne le menu rabais */
+	height:1000px;
+}
+#2
+{
+	font-size: 64px;								/*	emplacement du 2$ dans rabais */
+}
+#bonbon100
+{
+	position:absolute;
+	top: 100px;										/*	emplacement image dans le menu rabais */
+	left: 525px;
+}
+aside{
+  position:absolute;
+  top:210px;
+  left:375px;
+  border-style: solid;   /*forme contour*/			/*	l'encadrement du contour du rabais */
+  border-radius: 1px;  /*taille contour*/
+  border-color: black; /* couleur contour noir*/
+   
+}

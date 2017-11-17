@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr-CA"> 												<!-- Set page Language to french canadian --> 
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>FlappyFish</title>
+		<link rel="shortcut icon" href="TemplateData/favicon.ico">
+		<link rel="stylesheet" href="TemplateData/style.css">
+		<script src="TemplateData/UnityProgress.js"></script>  
+		<script src="Build/UnityLoader.js"></script>
+		<script>
+		  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/FlappyFish WebGL.json", {onProgress: UnityProgress});
+		</script>
+	</head>
+	<body>
+		<div class='topnav' id='topnav'> 							<!-- navigation bar at the top -->
+			<a href="../index.html" class="head-class active" title='Home'>Home</a> 
+			<a href="supportus.html" class="head-class" title='Donate'>Nous supporter!</a> 
+			<a href="contactus.html" title='Talk' target="_blank" class="head-class">Nous Contacter!</a>
+			<a href="download.html" class="head-class" title='Downloads'>Téléchargements</a>
+		</div>
+		<nav>
+			<ul id="navul">										<!-- The Left Sidebar --> <!-- navigation bar to the left -->
+				<li class="navli"><a href="../ssb/ssb.html"><b>Super School Brothers</b></a></li>
+				<li class="navli"><a href="../flappyfish/flappyfish.html"><b>FlappyFish</b></a></li>
+			</ul>
+		</nav>
+		<div class="webgl-content">
+		  <div id="gameContainer" style="width: 960px; height: 600px"></div>
+		  <div class="footer">
+			<div class="webgl-logo"></div>
+			<div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+			<div class="title">FlappyFish</div>
+		  </div>
+		</div>
+	</body>
+</html>
