@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% if title %}
+    <title>{{ title }} - flaskHW</title>
+    {% else %}
+    <title>Welcome to flaskHW</title>
+    {% endif %}
+	<link rel="stylesheet" href="/static/css/bootstrap.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="/static/css/style.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="/static/css/lightbox.css" crossorigin="anonymous">
+</head>
+<body>
+	<nav class="navbar fixed-top navbar-dark bg-dark">
+		<a class="nav-link navbar-brand" href="#">ElpisMelody</a>
+		<a class="nav-link" href="/index">Home</a>
+		<a class="nav-link" href="/images">Image Gallery</a>
+		<a class="nav-link" href="/videos">Video Gallery</a>
+		<a class="nav-link" href="/music">Music Gallery</a>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<h1>Image Gallery</h1>
+		</div>
+		<div class="row">
+			{% for filename in filenames %}
+			<div class="col-3" style="padding: 0px 0px 0px 0px">
+				<p>File: {{ filenames[filenames.index(filename)] }}</p>
+				<a href="{{ filepaths[filenames.index(filename)] }}" data-lightbox="image" data-title="My caption">
+					<img src="{{ filepaths[filenames.index(filename)] }}" width="200px">
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	<script src="/static/js/jquery-3.2.1.min.js"></script>
+	<script src="/static/js/lightbox.js"></script>
+</body>
+</html>

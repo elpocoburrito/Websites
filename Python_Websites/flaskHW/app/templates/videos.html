@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/static/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="/static/css/lightbox.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/style.css" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<ul id="slide-out" class="side-nav">
+<li><a href="#!"><i class="material-icons">account_circle</i>{{ user }}</a></li>
+<li><a href="#!"><i class="material-icons">image</i>Image Gallery</a></li>
+<li><a href="#!"><i class="material-icons">video_library</i>Video Gallery</a></li>
+<li><a href="#!"><i class="material-icons">gps_fixed</i>You are in {{ country }}</a></li>
+</ul>
+<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+<div class="container">
+    <div class="row">
+        {% for filename in filenames %}
+        <div class="col s3 m3 l3 crop">
+            <a href="{{ filepaths[filenames.index(filename)] }}" data-lightbox="image" data-title="My caption">
+				<img src="{{ filepaths[filenames.index(filename)] }}">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<script src="/static/js/jquery-3.2.1.min.js"></script>
+<script src="/static/js/lightbox.js"></script>
+<script type="text/javascript" src="/static/js/materialize.min.js"></script>
+<script>$(".button-collapse").sideNav();</script>
+</body>
+</html>

@@ -10,35 +10,25 @@
 	<link rel="stylesheet" href="/static/css/lightbox.css" crossorigin="anonymous">
 </head>
 <body>
-	<nav class="navbar fixed-top navbar-dark bg-dark">
+	<snav class="navbar fixed-top navbar-dark bg-dark">
 		<a class="nav-link navbar-brand" href="#">ElpisMelody</a>
-		<a class="nav-link" href="#">Home</a>
-		<a class="nav-link" href="#">Image Gallery</a>
-		<a class="nav-link" href="#">Video Gallery</a>
-	</nav>
+		<a class="nav-link" href="/index">Home</a>
+		<a class="nav-link" href="/images">Image Gallery</a>
+		<a class="nav-link" href="/videos">Video Gallery</a>
+		<a class="nav-link" href="/music">Music Gallery</a>
+	</snav>
 	<div class="container">
 		<div class="row">
 			<h1>Image Gallery</h1>
-		</div>
-		<div class="row">
-			{% for filename in filenames %}
-			<div class="col-3" style="padding: 0px 0px 0px 0px">
-				<p>File: {{ filenames[filenames.index(filename)] }}</p>
-				<a href="{{ filepaths[filenames.index(filename)] }}" data-lightbox="image" data-title="My caption">
-				<img src="{{ filepaths[filenames.index(filename)] }}" width="200px"></img>
-				</a>
-			</div>
-			{% endfor %}
-			
-			<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-			Suspendisse blandit bibendum metus et volutpat. 
-			Pellentesque sodales ex tempor maximus eleifend. 
-			Aliquam lacus libero, ullamcorper quis erat at, mollis 
-			fermentum nisl. Donec congue tincidunt tincidunt. 
-			Sed ut facilisis nulla. Nam ultricies mauris eget 
-			faucibus gravida. Donec commodo malesuada lobortis. 
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Suspendisse blandit bibendum metus et volutpat.
+			Pellentesque sodales ex tempor maximus eleifend.
+			Aliquam lacus libero, ullamcorper quis erat at, mollis
+			fermentum nisl. Donec congue tincidunt tincidunt.
+			Sed ut facilisis nulla. Nam ultricies mauris eget
+			faucibus gravida. Donec commodo malesuada lobortis.
 			Nulla ac elit dui.
-			</p>-->
+			</p>
 		</div>
 	</div>
 	<script src="/static/js/jquery-3.2.1.min.js"></script>

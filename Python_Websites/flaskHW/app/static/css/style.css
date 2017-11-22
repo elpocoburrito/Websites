@@ -5,3 +5,16 @@ body {
 h1, p {
 	color: #ccd8e8;
 }
+
+.crop {
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    padding: 20px 20px 20px 20px;
+}
+
+.crop img {
+    width: 250px;
+    height: 200px;
+    margin: -60px 0 0 -50px;
+}
